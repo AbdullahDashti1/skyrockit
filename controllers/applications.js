@@ -12,5 +12,10 @@ router.get('/', async (req, res) => {
   }
 });
 
+// applications create form
+router.get('/new', (req, res) => {
+  res.render('applications/new.ejs');
+});
+
 module.exports = router;
 
